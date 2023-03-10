@@ -31,6 +31,13 @@ app_license = "MIT"
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 
+doc_events = {
+	"Material Request": {
+		"on_submit": "erpnext14_gsg.doc_events.material_request.make_stock_entry_from_material_issue"
+	},
+}
+
+
 doctype_js = {"Journal Entry": "public/js/journal_entry.js",
               "Payment Entry": "public/js/payment_entry.js",
               }
@@ -112,13 +119,7 @@ fixtures = [
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+
 
 # Scheduled Tasks
 # ---------------
