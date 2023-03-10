@@ -1,0 +1,37 @@
+[
+ {
+  "company": "Zak Company",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Sales Taxes and Charges Template",
+  "is_default": 1,
+  "modified": "2023-03-10 20:33:52.668950",
+  "name": "Sales Taxes 16% - ZC",
+  "tax_category": null,
+  "taxes": [
+   {
+    "account_currency": "USD",
+    "account_head": "Marketing Expenses - ZC",
+    "base_tax_amount": 0.0,
+    "base_tax_amount_after_discount_amount": 0.0,
+    "base_total": 0.0,
+    "charge_type": "On Net Total",
+    "cost_center": "Main - ZC",
+    "description": "Marketing Expenses",
+    "dont_recompute_tax": 0,
+    "included_in_paid_amount": 0,
+    "included_in_print_rate": 1,
+    "item_wise_tax_detail": null,
+    "parent": "Sales Taxes 16% - ZC",
+    "parentfield": "taxes",
+    "parenttype": "Sales Taxes and Charges Template",
+    "rate": 16.0,
+    "row_id": null,
+    "tax_amount": 0.0,
+    "tax_amount_after_discount_amount": 0.0,
+    "total": 0.0
+   }
+  ],
+  "title": "Sales Taxes 16%"
+ }
+]
