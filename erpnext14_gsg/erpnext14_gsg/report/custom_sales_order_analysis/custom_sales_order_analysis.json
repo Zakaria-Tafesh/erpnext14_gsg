@@ -1,0 +1,40 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-03-11 02:33:51.927705",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"columns\":[{\"label\":\"Date\",\"fieldname\":\"date\",\"fieldtype\":\"Date\",\"width\":90,\"id\":\"date\",\"name\":\"Date\",\"editable\":false},{\"label\":\"Sales Order\",\"fieldname\":\"sales_order\",\"fieldtype\":\"Link\",\"options\":\"Sales Order\",\"width\":160,\"id\":\"sales_order\",\"name\":\"Sales Order\",\"editable\":false,\"compareValue\":null},{\"label\":\"Status\",\"fieldname\":\"status\",\"fieldtype\":\"Data\",\"width\":130,\"id\":\"status\",\"name\":\"Status\",\"editable\":false,\"compareValue\":null},{\"label\":\"Customer\",\"fieldname\":\"customer\",\"fieldtype\":\"Link\",\"options\":\"Customer\",\"width\":130,\"id\":\"customer\",\"name\":\"Customer\",\"editable\":false,\"compareValue\":null},{\"label\":\"Item Code\",\"fieldname\":\"item_code\",\"fieldtype\":\"Link\",\"options\":\"Item\",\"width\":100,\"id\":\"item_code\",\"name\":\"Item Code\",\"editable\":false,\"compareValue\":null},{\"label\":\"Description\",\"fieldname\":\"description\",\"fieldtype\":\"Small Text\",\"width\":100,\"id\":\"description\",\"name\":\"Description\",\"editable\":false,\"compareValue\":null},{\"label\":\"Qty\",\"fieldname\":\"qty\",\"fieldtype\":\"Float\",\"width\":120,\"convertible\":\"qty\",\"id\":\"qty\",\"name\":\"Qty\",\"editable\":false,\"compareValue\":null},{\"label\":\"Delivered Qty\",\"fieldname\":\"delivered_qty\",\"fieldtype\":\"Float\",\"width\":120,\"convertible\":\"qty\",\"id\":\"delivered_qty\",\"name\":\"Delivered Qty\",\"editable\":false,\"compareValue\":null},{\"label\":\"Qty to Deliver\",\"fieldname\":\"pending_qty\",\"fieldtype\":\"Float\",\"width\":120,\"convertible\":\"qty\",\"id\":\"pending_qty\",\"name\":\"Qty to Deliver\",\"editable\":false,\"compareValue\":null},{\"label\":\"Billed Qty\",\"fieldname\":\"billed_qty\",\"fieldtype\":\"Float\",\"width\":80,\"convertible\":\"qty\",\"id\":\"billed_qty\",\"name\":\"Billed Qty\",\"editable\":false,\"compareValue\":null},{\"label\":\"Qty to Bill\",\"fieldname\":\"qty_to_bill\",\"fieldtype\":\"Float\",\"width\":80,\"convertible\":\"qty\",\"id\":\"qty_to_bill\",\"name\":\"Qty to Bill\",\"editable\":false,\"compareValue\":null},{\"label\":\"Amount\",\"fieldname\":\"amount\",\"fieldtype\":\"Currency\",\"width\":110,\"options\":\"Company:company:default_currency\",\"convertible\":\"rate\",\"id\":\"amount\",\"name\":\"Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Billed Amount\",\"fieldname\":\"billed_amount\",\"fieldtype\":\"Currency\",\"width\":110,\"options\":\"Company:company:default_currency\",\"convertible\":\"rate\",\"id\":\"billed_amount\",\"name\":\"Billed Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Pending Amount\",\"fieldname\":\"pending_amount\",\"fieldtype\":\"Currency\",\"width\":130,\"options\":\"Company:company:default_currency\",\"convertible\":\"rate\",\"id\":\"pending_amount\",\"name\":\"Pending Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Amount Delivered\",\"fieldname\":\"delivered_qty_amount\",\"fieldtype\":\"Currency\",\"width\":100,\"options\":\"Company:company:default_currency\",\"convertible\":\"rate\",\"id\":\"delivered_qty_amount\",\"name\":\"Amount Delivered\",\"editable\":false,\"compareValue\":null},{\"label\":\"Delivery Date\",\"fieldname\":\"delivery_date\",\"fieldtype\":\"Date\",\"width\":120,\"id\":\"delivery_date\",\"name\":\"Delivery Date\",\"editable\":false},{\"label\":\"Delay (in Days)\",\"fieldname\":\"delay\",\"fieldtype\":\"Data\",\"width\":100,\"id\":\"delay\",\"name\":\"Delay (in Days)\",\"editable\":false,\"compareValue\":null},{\"label\":\"Time Taken to Deliver\",\"fieldname\":\"time_taken_to_deliver\",\"fieldtype\":\"Duration\",\"width\":100,\"id\":\"time_taken_to_deliver\",\"name\":\"Time Taken to Deliver\",\"editable\":false,\"compareValue\":null},{\"label\":\"Warehouse\",\"fieldname\":\"warehouse\",\"fieldtype\":\"Link\",\"options\":\"Warehouse\",\"width\":100,\"id\":\"warehouse\",\"name\":\"Warehouse\",\"editable\":false,\"compareValue\":null},{\"label\":\"Company\",\"fieldname\":\"company\",\"fieldtype\":\"Link\",\"options\":\"Company\",\"width\":100,\"id\":\"company\",\"name\":\"Company\",\"editable\":false,\"compareValue\":null}]}",
+ "modified": "2023-03-11 02:38:16.711685",
+ "modified_by": "Administrator",
+ "module": "Erpnext14 Gsg",
+ "name": "Custom Sales Order Analysis",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Sales Order",
+ "reference_report": "Sales Order Analysis",
+ "report_name": "Custom Sales Order Analysis",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Maintenance User"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Stock User"
+  }
+ ]
+}
