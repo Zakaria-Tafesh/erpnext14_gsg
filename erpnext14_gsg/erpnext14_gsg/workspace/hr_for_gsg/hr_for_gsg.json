@@ -1,0 +1,74 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"-p-nG_iv6x\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">HR for GSG</span>\",\"col\":12}},{\"id\":\"T_fB0c71Ag\",\"type\":\"card\",\"data\":{\"card_name\":\"GSG Reports\",\"col\":4}},{\"id\":\"M2iyo6UR7o\",\"type\":\"card\",\"data\":{\"card_name\":\"GSG DocTypes\",\"col\":4}}]",
+ "creation": "2023-03-12 01:35:36.618729",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "heart-active",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "HR for GSG",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GSG DocTypes",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Excuse Application",
+   "link_count": 0,
+   "link_to": "Employee Excuse Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "To Whom It Concerns",
+   "link_count": 0,
+   "link_to": "To Whom It Concerns",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GSG Reports",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Attendance Working Hours",
+   "link_count": 0,
+   "link_to": "Attendance Working Hours",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-03-12 01:39:26.854340",
+ "modified_by": "Administrator",
+ "module": "Erpnext14 Gsg",
+ "name": "HR for GSG",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "HR",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 41.0,
+ "shortcuts": [],
+ "title": "HR for GSG"
+}
