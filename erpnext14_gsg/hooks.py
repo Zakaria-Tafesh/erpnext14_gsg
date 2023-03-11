@@ -44,8 +44,10 @@ doctype_js = {"Journal Entry": "public/js/journal_entry.js",
 
 fixtures = [
     "Purchase Taxes and Charges Template",
-    "Sales Taxes and Charges Template"
-
+    "Sales Taxes and Charges Template",
+    {"dt": "Salary Component",
+        "filters":
+            [["name", "like", "%GSG%"]]},
 ]
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
