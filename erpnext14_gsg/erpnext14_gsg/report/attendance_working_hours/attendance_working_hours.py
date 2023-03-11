@@ -33,6 +33,9 @@ def get_conditions(filters):
 	elif filters.get("from_date") and not filters.get("to_date"):
 		conditions += " and a.attendance_date > %(from_date)s"
 
+	elif not filters.get("from_date") and filters.get("to_date"):
+		conditions += " and a.attendance_date < %(frto_dateom_date)s"
+
 	if filters.get("employee"):
 		conditions += " and a.employee = %(employee)s"
 
@@ -63,11 +66,12 @@ def get_data(conditions, filters):
 			a.employee as employee,
 			a.employee_name as employee_name,
 			a.check_in as check_in,
-			a.check_out as check_out
+			a.check_out as check_out,
+			a.name as attendance_name
 		FROM
 			`tabAttendance` a
 		WHERE
-			a.idx >= 0
+			a.idx >= 0 and a.docstatus = 1 
 			{conditions}
 			
 	""".format(
@@ -79,6 +83,11 @@ def get_data(conditions, filters):
 	for row in data:
 		working_hours = calc_working_hours(row['check_in'], row['check_out'])
 		row['working_hours'] = working_hours
+
+		row["attendance_name"] = f"""<style>.hover-me:hover{{cursor: pointer}}</style> <a target="_blank" href="#"
+		onclick = 'window.open("http://0.0.0.0:8000/app/attendance/{row["attendance_name"]}");return false;'>{row["attendance_name"]}</a>"""
+
+		# row.attendance_name = f"<a target='_blank' class='ellipsis' href='/app/attendance/{row.attendance_name}' title='{row.attendance_name}' data-doctype='Attendance' data-name='{row.attendance_name}'>{row.employee_name}</a>"
 
 	print(type(data))
 	print(data)
@@ -152,11 +161,14 @@ def get_columns():
 			"fieldtype": "Float",
 			"width": 150,
 		},
+
+		{
+			"label": _("Attendance"),
+			"fieldname": "attendance_name",
+			"fieldtype": "HTML",
+			"width": 160,
+		},
+
 	]
-
-
-
-
-
 
 	return columns

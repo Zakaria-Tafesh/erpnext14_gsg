@@ -38,5 +38,35 @@ frappe.query_reports["Attendance Working Hours"] = {
             "options": "Department"
 		},
 
-	]
-};
+
+	],
+	};
+//	"formatter": function (value, row, column, data, default_formatter) {
+//    value = default_formatter(value, row, column, data);
+//    let format_fields = ["attendance_name"];
+//
+//    if (in_list(format_fields, column.fieldname)) {
+//      console.log(format_fields, column.fieldname);
+//      value = "<style>.hover-me:hover{cursor: pointer}</style><span class='hover-me' onclick=" + open_new_tap_attendance(val) + "</span>"";
+//    }
+//
+//    return value;
+//  }
+//    "formatter": function (value, row, column, data, default_formatter) {
+//        value = default_formatter(value, row, column, data);
+//        let format_fields = ["attendance_name"];
+//
+//        if (in_list(format_fields, column.fieldname)) {
+////          console.log(format_fields, column.fieldname);
+////			value = "<span style='color:red;'>" + value + "</span>";
+//            value = '<span class="hover-me" onclick="open_new_tap_attendance(\''+value+'\')">'+value + '</span>';
+//        }
+//
+//        return value;
+//      }
+//      };
+//
+//function open_new_tap_attendance(val) {
+//    window.open(/app/attendance/${val});
+//}
+
