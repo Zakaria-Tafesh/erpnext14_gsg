@@ -55,6 +55,7 @@ fixtures = [
 
 # Home Pages
 # ----------
+home_page = "gsg-website"
 
 # application home page (will override Website Settings)
 # home_page = "login"
